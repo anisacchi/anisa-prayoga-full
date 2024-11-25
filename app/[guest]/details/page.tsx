@@ -3,6 +3,7 @@ import {
   Couple,
   Event,
   Gallery,
+  Gift,
   Home,
   Map,
   Navigation,
@@ -40,7 +41,15 @@ export default function DetailsPage() {
         <Gallery />
       </section>
 
-      <section id='wishes' data-index='4'>
+			<section
+        id='gift'
+        data-index='4'
+        className='bg-maroon-dark bg-bunga bg-cover bg-repeat bg-top rounded-lg pb-16'
+      >
+        <Gift />
+      </section>
+
+      <section id='wishes' data-index='5'>
         <Wishes />
         <Closing />
       </section>

@@ -33,7 +33,6 @@ const Scale: React.FC<ScaleProps> = ({
     } else {
       control.start(animation.hidden);
     }
-		console.log(ref, isInView)
   }, [isInView]);
 
   return (
@@ -50,8 +49,6 @@ const Scale: React.FC<ScaleProps> = ({
           duration: duration,
           delay: delay,
           type: 'spring',
-          mass: 2,
-          stiffness: 40,
         }}
         className={clsx(className, 'w-full flex justify-center items-center')}
       >

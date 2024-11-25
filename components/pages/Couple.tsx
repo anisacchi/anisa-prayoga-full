@@ -78,7 +78,7 @@ const Couple = () => {
 			</Scale>
 
 			<div className='w-full flex flex-col justify-center items-center'>
-        <Slide direction='right'>
+        <Slide direction='left'>
           <Image
             src={Groom}
             alt='Groom'
@@ -88,19 +88,19 @@ const Couple = () => {
           />
         </Slide>
 
-        <Slide direction='right' delay={0.1}>
+        <Slide direction='left' delay={0.1}>
           <p className='text-4xl font-great-vibes mb-2'>Prayoga Febriandika</p>
         </Slide>
 
-        <Slide direction='right' delay={0.15}>
+        <Slide direction='left' delay={0.15}>
           <p className='text-sm'>Putra kedua dari</p>
         </Slide>
 
-        <Slide direction='right' delay={0.2}>
+        <Slide direction='left' delay={0.2}>
           <p className='text-sm'>Bapak Ketut Hari Handoko & Ibu Eni Rokhayati</p>
         </Slide>
 
-        <Slide direction='right' delay={0.25}>
+        <Slide direction='left' delay={0.25}>
           <Link
             href='https://instagram.com/pfebriandikaa'
             rel='noreferrer noopener'

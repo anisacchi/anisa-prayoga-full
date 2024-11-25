@@ -43,10 +43,7 @@ const Slide: React.FC<SlideProps> = ({
     }
   });
   return (
-    <div
-      ref={ref}
-      className='w-full flex justify-center items-center'
-    >
+    <div ref={ref} className='w-full flex justify-center items-center'>
       <motion.div
         initial='hidden'
         animate={control}
@@ -56,8 +53,6 @@ const Slide: React.FC<SlideProps> = ({
           duration: duration,
           delay: delay,
           type: 'spring',
-          mass: 2,
-          stiffness: 40,
         }}
         className={clsx(className, 'w-full flex justify-center items-center')}
       >
