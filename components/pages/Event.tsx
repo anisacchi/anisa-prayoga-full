@@ -26,7 +26,7 @@ const Event = () => {
         <Typing
           text='Our Special Day'
           once={false}
-          className='font-great-vibes text-3xl text-white'
+          className='!font-great-vibes !text-3xl text-white'
         />
       </div>
 

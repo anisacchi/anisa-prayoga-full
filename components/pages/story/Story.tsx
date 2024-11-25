@@ -48,16 +48,16 @@ const Story = () => {
       />
 
       {/* Title */}
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center mb-4'>
         <Typing
           text='Our Love Story'
-          className='text-3xl font-great-vibes text-maroon-dark'
+          className='!text-3xl !font-great-vibes text-maroon-dark'
           once={false}
         />
       </div>
 
       {stories.map((story, index) => (
-        <StoryCard story={story} index={index} />
+        <StoryCard key={story.title} story={story} index={index} />
       ))}
     </div>
   );

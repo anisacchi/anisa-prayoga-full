@@ -1,6 +1,6 @@
 'use client';
 
-import { Slide } from '@/components/animations';
+import { Scale } from '@/components/animations';
 import React, { useEffect, useState } from 'react';
 
 interface CountdownProps {
@@ -37,41 +37,41 @@ const Countdown: React.FC<CountdownProps> = ({ weddingDate }) => {
 
   return (
     <div className='w-full p-4 flex gap-2 justify-around'>
-      <Slide direction='down' delay={0.1} once={false}>
+      <Scale delay={0.1} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.days}
           </span>
 					<span className='text-[10px] text-maroon-dark'>Days</span>
         </div>
-      </Slide>
+      </Scale>
 			
-			<Slide direction='down' delay={0.2} once={false}>
+			<Scale delay={0.2} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.hours}
           </span>
 					<span className='text-[10px] text-maroon-dark'>Hours</span>
         </div>
-      </Slide>
+      </Scale>
 
-			<Slide direction='down' delay={0.15} once={false}>
+			<Scale delay={0.15} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.minutes}
           </span>
 					<span className='text-[10px] text-maroon-dark'>Minutes</span>
         </div>
-      </Slide>
+      </Scale>
 
-			<Slide direction='down' delay={0.25} once={false}>
+			<Scale delay={0.25} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.seconds}
           </span>
 					<span className='text-[10px] text-maroon-dark'>Seconds</span>
         </div>
-      </Slide>
+      </Scale>
     </div>
   );
 };
