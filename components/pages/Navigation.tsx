@@ -78,12 +78,12 @@ const Navigation = () => {
             <menu.icon.line
               width={20}
               height={20}
-              className='fill-none text-gray'
+              className='fill-none text-gray/70'
             />
           )}
           <span
             className={`text-xs ${
-              activeMenu == index ? 'text-white' : 'text-gray'
+              activeMenu == index ? 'text-white' : 'text-gray/70'
             }`}
           >
             {menu.name}

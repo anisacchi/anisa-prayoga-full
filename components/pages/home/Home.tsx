@@ -15,8 +15,8 @@ const Home = () => {
           <Hero />
         </Scale>
 
-				<Scale delay={1.1} className='flex-col gap-2'>
-					<p className='text-sm'>The Wedding of</p>
+        <Scale delay={1.1} className='flex-col gap-2'>
+          <p className='text-sm'>The Wedding of</p>
           <h1 className='text-4xl font-great-vibes'>
             Anisa <span className='text-lg mx-2'>&</span> Prayoga
           </h1>
@@ -24,11 +24,13 @@ const Home = () => {
 
         <Countdown weddingDate='2024-12-28T08:00:00' />
 
-				<Scale delay={1} once={false} className='flex-col gap-1'>
-					<p className='text-sm'>Saturday, 28 Desember 2024</p>
+        <Scale delay={1} once={false} className=''>
+          <p className='text-sm'>Saturday, 28 Desember 2024</p>
+        </Scale>
 
-					<SaveTheDate />
-				</Scale>
+        <Scale delay={1.1} once={false}>
+          <SaveTheDate />
+        </Scale>
       </div>
 
       <div className='absolute bottom-[70px] w-full'>
