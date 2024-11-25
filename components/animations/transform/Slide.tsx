@@ -11,7 +11,6 @@ interface SlideProps extends AnimationProps {
 }
 
 const Slide: React.FC<SlideProps> = ({
-  key = null,
   direction = 'down',
   delay = 0,
   duration = 2,

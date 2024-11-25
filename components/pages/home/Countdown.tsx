@@ -1,6 +1,6 @@
 'use client';
 
-import { Scale, Slide } from '@/components/animations';
+import { Slide } from '@/components/animations';
 import React, { useEffect, useState } from 'react';
 
 interface CountdownProps {
@@ -37,7 +37,7 @@ const Countdown: React.FC<CountdownProps> = ({ weddingDate }) => {
 
   return (
     <div className='w-full p-4 flex gap-2 justify-around'>
-      <Slide direction='down' delay={0.8} once={false}>
+      <Slide direction='down' delay={0.1} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.days}
@@ -46,7 +46,7 @@ const Countdown: React.FC<CountdownProps> = ({ weddingDate }) => {
         </div>
       </Slide>
 			
-			<Slide direction='down' delay={0.9} once={false}>
+			<Slide direction='down' delay={0.2} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.hours}
@@ -55,7 +55,7 @@ const Countdown: React.FC<CountdownProps> = ({ weddingDate }) => {
         </div>
       </Slide>
 
-			<Slide direction='down' delay={1} once={false}>
+			<Slide direction='down' delay={0.15} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.minutes}
@@ -64,7 +64,7 @@ const Countdown: React.FC<CountdownProps> = ({ weddingDate }) => {
         </div>
       </Slide>
 
-			<Slide direction='down' delay={1.1} once={false}>
+			<Slide direction='down' delay={0.25} once={false}>
         <div className='w-full p-3 aspect-square flex flex-col justify-center items-center gap-1 border border-maroon-dark rounded-lg'>
           <span className='text-maroon-dark font-great-vibes text-lg'>
             {timeLeft.seconds}
