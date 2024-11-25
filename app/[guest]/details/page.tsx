@@ -36,7 +36,7 @@ export default function DetailsPage() {
         <Map />
       </section>
 
-      <section id='moments' data-index='3' className='mb-5'>
+      <section id='moments' data-index='3' className='mb-8'>
         <Story />
         <Gallery />
       </section>
@@ -44,7 +44,7 @@ export default function DetailsPage() {
 			<section
         id='gift'
         data-index='4'
-        className='bg-maroon-dark bg-bunga bg-cover bg-repeat bg-top rounded-lg pb-16'
+        className='bg-maroon-dark bg-batik-transparent bg-cover bg-repeat bg-top rounded-lg pb-16'
       >
         <Gift />
       </section>

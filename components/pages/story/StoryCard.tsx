@@ -32,7 +32,7 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, index }) => {
         threshold={0.6}
         className='w-full ml-5'
       >
-        <div className='w-full m-2 p-5 rounded-lg border border-maroon-dark bg-white shadow-lg'>
+        <div className='w-full m-2 p-5 rounded-lg border border-maroon-dark bg-white'>
           <div className='relative w-full'>
             <Image
               src={Bingkai}
@@ -51,7 +51,7 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, index }) => {
             />
           </div>
 
-          <Slide direction='right' className='!justify-start'>
+          <Slide direction='right' className='!justify-start border-b border-maroon-dark/20 mb-2'>
             <h3 className='font-caveat text-xl'>{story.title}</h3>
           </Slide>
 
