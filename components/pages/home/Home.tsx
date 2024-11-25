@@ -11,7 +11,7 @@ const Home = () => {
       <TopFrame />
 
       <div className='w-full h-full p-5 flex flex-col justify-center items-center gap-2'>
-        <Scale delay={1} once={false}>
+        <Scale delay={1}>
           <Hero />
         </Scale>
 
