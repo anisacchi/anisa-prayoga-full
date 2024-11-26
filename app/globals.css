@@ -23,8 +23,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 
   font-family: var(--font-delius);
 }
@@ -42,12 +40,37 @@ body {
   background-color: var(--white);
 }
 
-::-webkit-scrollbar-track {
-  background: none;
+/* Scrollbar */
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Menyembunyikan scrollbar di browser berbasis Webkit (Chrome, Safari) */
 }
 
-::-webkit-scrollbar {
-  display: none;
+.hide-scrollbar {
+  overflow-y: scroll; /* Pastikan kontennya bisa discroll */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-left: 1px solid rgba(128, 0, 0, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  margin: 4px 0;
+  background-color: rgba(128, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 8px; /* Lebar thumb */
+  height: 16px; /* Tinggi thumb */
+  transition: all;
+  transition-duration: 300;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(128, 0, 0, 0.7);
 }
 
 @layer utilities {

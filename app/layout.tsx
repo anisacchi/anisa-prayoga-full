@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={`${caveat.variable} ${delius.variable} ${greatVibes.variable} antialiased`}
       >
-        <main className='relative h-screen w-full max-w-md overflow-y-scroll overflow-x-hidden rounded-lg bg-white shadow-lg'>
+        <main className='relative h-screen w-full max-w-md overflow-y-scroll overflow-x-hidden rounded-lg bg-white shadow-lg hide-scrollbar'>
           <MusicProvider>
             <AnimationWrap>
               <MusicPlayer />

@@ -16,3 +16,4 @@ export { default as Bingkai } from './bingkai.webp'
 
 export { default as Bride } from './foto1.webp'
 export { default as Groom } from './foto2.webp'
+export { default as Icon } from './icon.png'

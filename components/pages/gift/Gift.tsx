@@ -44,7 +44,7 @@ const Gift = () => {
       />
 
       <Scale threshold={1} className='mt-4 px-4' once={false}>
-        <p className='text-xs text-white text-center'>
+        <p className='text-xs text-white/90 text-center'>
           Kehadiran dan doa Saudara/i sudah lebih dari cukup bagi kami. Namun,
           bila ada yang ingin berbagi kasih dalam bentuk hadiah, dapat melalui
           tautan di bawah ini. Terima kasih banyak 🤗❤

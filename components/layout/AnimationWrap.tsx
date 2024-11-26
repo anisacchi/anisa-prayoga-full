@@ -58,7 +58,7 @@ const AnimationWrap: React.FC<AnimationWrapProps> = ({ children }) => {
           duration: 0.2,
           ease: 'linear',
         }}
-        className='relative w-full max-w-md h-full overflow-x-hidden'
+        className='relative w-full max-w-md h-full overflow-x-hidden hide-scrollbar'
       >
         {children}
       </motion.div>

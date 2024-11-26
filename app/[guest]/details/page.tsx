@@ -49,7 +49,7 @@ export default function DetailsPage() {
         <Gift />
       </section>
 
-      <section id='wishes' data-index='5'>
+      <section id='wishes' data-index='5' className='pb-24'>
         <Wishes />
         <Closing />
       </section>
