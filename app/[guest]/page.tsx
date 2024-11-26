@@ -21,7 +21,7 @@ const GuestPage: React.FC<GuestProps> = ({ params }) => {
   const { handlePlayMusic } = useMusic();
 
   const openInvitationHandler = () => {
-    // handlePlayMusic();
+    handlePlayMusic();
     router.push(`${guest?.url}/details`);
   };
 
