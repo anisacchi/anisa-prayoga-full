@@ -4,7 +4,6 @@ import './globals.css';
 import { AnimationWrap } from '@/components/layout';
 import { MusicProvider } from '@/context/MusicContext';
 import { MusicPlayer } from '@/components';
-import { Scale } from '@/components/animations';
 
 const caveat = Caveat({
   weight: ['400'],

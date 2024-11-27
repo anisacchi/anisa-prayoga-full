@@ -2,11 +2,15 @@
 
 import { Button, Toast } from '@/components';
 import { database } from '@/lib/firebase';
+import { getGuest } from '@/lib/guest';
 import { push, ref } from 'firebase/database';
+import { useParams } from 'next/navigation';
 import React, { useState } from 'react';
 
 const WishForm = () => {
-  const [name, setName] = useState<string>('');
+  const { guest } = useParams();
+  const guestName = getGuest(guest.toString());
+
   const [wish, setWish] = useState<string>('');
   const [isAnonymous, setIsAnonymous] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
@@ -27,7 +31,7 @@ const WishForm = () => {
     try {
       const wishesRef = ref(database, 'wishes');
       await push(wishesRef, {
-        name: isAnonymous ? 'Anonim' : name,
+        name: guestName?.name,
         wish,
         createdAt: Date.now(),
       });
@@ -36,7 +40,6 @@ const WishForm = () => {
         status: 'success',
         text: 'Ucapan berhasil terkirim. Terima kasih.',
       });
-      setName('');
       setWish('');
     } catch (error) {
       console.error('Error submitting wish: ', error);
@@ -66,24 +69,12 @@ const WishForm = () => {
               id='name'
               name='name'
               type='text'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              disabled={isAnonymous}
-              required={!isAnonymous}
+              value={guestName?.name}
+              disabled={true}
+              required
               placeholder='Nama'
-              className='w-full px-4 py-2 bg-white rounded-lg border border-maroon-light focus:border-maroon-dark focus:shadow-none outline-none disabled:text-gray disabled:bg-gray/10 disabled:border-gray/60 transition-all duration-300 ease-in-out text-sm'
+              className='w-full px-4 py-2 rounded-lg border outline-none disabled:text-gray/90 disabled:bg-gray/10 disabled:border-maroon-dark/60 text-sm'
             />
-
-            <div className='w-full flex gap-2 ml-2'>
-              <input
-                id='anonymous'
-                checked={isAnonymous}
-                type='checkbox'
-                onChange={anonymousHandler}
-              />
-
-              <label className='text-sm'>Kirim sebagai anonim</label>
-            </div>
           </div>
 
           <textarea

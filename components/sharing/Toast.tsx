@@ -15,7 +15,7 @@ const Toast: React.FC<ToastProps> = ({ status, text, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onClose();
-    }, 4000);
+    }, 6000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -25,7 +25,7 @@ const Toast: React.FC<ToastProps> = ({ status, text, onClose }) => {
       initial={{ x: 0, y: '-100%', opacity: 0 }}
       animate={{ x: 0, y: 0, opacity: 1 }}
       transition={{ duration: 1, type: 'spring' }}
-      className='fixed top-1 z-50'
+      className='sticky top-1 z-50'
     >
       <div
         className={`px-2 py-4 w-64 flex items-center gap-2 rounded-lg border-2 shadow-md ${
@@ -46,7 +46,7 @@ const Toast: React.FC<ToastProps> = ({ status, text, onClose }) => {
       <motion.span
         initial={{ width: '100%' }}
         animate={{ width: '0%' }}
-        transition={{ delay: 1, duration: 3, ease: 'linear' }}
+        transition={{ delay: 1, duration: 5, ease: 'linear' }}
         className={`absolute bottom-0 left-0 w-full h-2 origin-left ${
           status === 'success' ? 'bg-green' : 'bg-maroon-dark'
         }`}
