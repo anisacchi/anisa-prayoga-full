@@ -46,5 +46,65 @@
   {
     "url": "nugs",
     "name": "Nug & Pasangan"
-  }
+  },
+  {
+    "url": "kabag",
+    "name": "Ibu Shofia Ushwatun H., S.Kom."
+  },
+  {
+    "url": "kasubagwil1",
+    "name": "Bpk. Abdul Rosyid, S.T."
+  },
+  {
+    "url": "kasubagwil3",
+    "name": "Ibu Sri Wardani, S.H."
+  },
+  {
+    "url": "milalistania",
+    "name": "Ibu Mila"
+  },
+  {
+    "url": "esti",
+    "name": "Ibu Esti"
+  },
+  {
+    "url": "aldi",
+    "name": "Aldi A."
+  },
+  {
+    "url": "bangfred",
+    "name": "Bang Fredy"
+  },
+	{
+		"url": "etha",
+		"name": "Etha & Suami"
+	},
+	{
+		"url": "dipus",
+		"name": "Diah & Suami"
+	},
+	{
+		"url": "inces",
+		"name": "Inas Istiqlaliyyah"
+	},
+	{
+		"url": "mita",
+		"name": "Swasti Paramita"
+	},
+	{
+		"url": "lidiya",
+		"name": "Maulidiya Qurrota Ayun"
+	},
+	{
+		"url": "vina",
+		"name": "Vina"
+	},
+	{
+		"url": "anggi",
+		"name": "Anggi"
+	},
+	{
+		"url": "amir",
+		"name": "Amirulloh"
+	}
 ]
