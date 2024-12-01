@@ -5,7 +5,7 @@ import { Scale, Wagging } from '@/components/animations';
 
 const Closing = () => {
   return (
-    <div className='relative p-5 flex flex-col justify-center items-center'>
+    <div className='relative p-10 flex flex-col justify-center items-center'>
       <Scale threshold={0.8}>
         <Image
           src={ClosingPhoto}

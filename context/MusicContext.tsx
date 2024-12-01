@@ -1,11 +1,17 @@
-'use client'
+'use client';
 
-import React, { createContext, useContext, useRef, useState } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 
 type MusicContextType = {
   isPlaying: boolean;
   toggleMusic: () => void;
-	handlePlayMusic: () => void;
+  handlePlayMusic: () => void;
 };
 
 const MusicContext = createContext<MusicContextType | undefined>(undefined);
@@ -40,6 +46,26 @@ export const MusicProvider: React.FC<{ children: React.ReactNode }> = ({
       }
     }
   };
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden && audioRef.current) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      } else if (!document.hidden && audioRef.current) {
+        audioRef.current.play().catch((error) => {
+          console.log('Playback failed: ', error);
+        });
+        setIsPlaying(true);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
 
   return (
     <MusicContext.Provider value={{ isPlaying, toggleMusic, handlePlayMusic }}>

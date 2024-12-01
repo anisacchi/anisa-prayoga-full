@@ -63,6 +63,7 @@ const GuestPage: React.FC<GuestProps> = ({ params }) => {
             variant='primary'
             shape='rectangle'
             onClick={openInvitationHandler}
+						classname='z-50'
           >
             <Envelope width={20} height={20} />
             <span className='text-sm'>Open Invitation</span>
