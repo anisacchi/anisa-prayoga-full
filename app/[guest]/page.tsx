@@ -70,8 +70,8 @@ const GuestPage: React.FC<GuestProps> = ({ params }) => {
           </Button>
         </Scale>
 
-        <Scale delay={0.6} className='mt-6 mx-6'>
-          <p className='text-xs font-light italic text-gray'>
+        <Scale delay={0.6} className='mt-auto mx-6'>
+          <p className='text-[10px] font-light italic text-gray'>
             *Mohon maaf apabila terdapat kesalahan penulisan <br />
             nama dan/atau gelar
           </p>
