@@ -58,16 +58,23 @@ const GuestPage: React.FC<GuestProps> = ({ params }) => {
           <p className='text-sm'>to celebrate this special moment with us 😊</p>
         </Scale>
 
-        <Scale delay={0.6} className='mt-8'>
+        <Scale delay={0.7} className='mt-6'>
           <Button
             variant='primary'
             shape='rectangle'
             onClick={openInvitationHandler}
-						classname='z-50'
+            classname='z-50'
           >
             <Envelope width={20} height={20} />
             <span className='text-sm'>Open Invitation</span>
           </Button>
+        </Scale>
+
+        <Scale delay={0.6} className='mt-6 mx-6'>
+          <p className='text-xs font-light italic text-gray'>
+            *Mohon maaf apabila terdapat kesalahan penulisan <br />
+            nama dan/atau gelar
+          </p>
         </Scale>
       </div>
 
