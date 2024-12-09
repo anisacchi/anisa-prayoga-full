@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { notFound, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useMusic } from '@/context/MusicContext';
 import { getGuest } from '@/lib/guest';
 import { Button, Hero } from '@/components';
@@ -26,7 +26,7 @@ const GuestPage: React.FC<GuestProps> = ({ params }) => {
   };
 
   if (!guest) {
-    notFound();
+    router.push('/');
   }
 
   return (
@@ -52,7 +52,7 @@ const GuestPage: React.FC<GuestProps> = ({ params }) => {
           <p className='text-sm'>With great joy, we invite</p>
 
           <div className='w-2/3 border-b-2 border-maroon-dark'>
-            <Typing text={guest.name} />
+            <Typing text={guest?.name || ''} />
           </div>
 
           <p className='text-sm'>to celebrate this special moment with us 😊</p>
