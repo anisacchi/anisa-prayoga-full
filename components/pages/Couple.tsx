@@ -20,7 +20,7 @@ const Couple = () => {
       </Scale>
 
       <Scale delay={0.1}>
-        <p className='text-sm italic text-green'>
+        <p className='text-sm italic text-green text-center'>
           Assalamualaikum Warahmatullahi Wabarakatuh
         </p>
       </Scale>
@@ -44,15 +44,15 @@ const Couple = () => {
         </Slide>
 
         <Slide direction='right' delay={0.1}>
-          <p className='text-4xl font-great-vibes mb-2'>Anisa Permatasari</p>
+          <p className='text-4xl font-great-vibes mb-2 text-center'>Anisa Permatasari</p>
         </Slide>
 
         <Slide direction='right' delay={0.15}>
-          <p className='text-sm'>Putri kedua dari</p>
+          <p className='text-sm text-center'>Putri kedua dari</p>
         </Slide>
 
         <Slide direction='right' delay={0.2}>
-          <p className='text-sm'>Bapak Hartono & Ibu Sri Iswatiningsih</p>
+          <p className='text-sm text-center'>Bapak Hartono & Ibu Sri Iswatiningsih</p>
         </Slide>
 
         <Slide direction='right' delay={0.25}>
@@ -74,7 +74,7 @@ const Couple = () => {
       </div>
 
 			<Scale className='my-2'>
-				<span className='font-great-vibes text-2xl'>&</span>
+				<span className='font-great-vibes text-2xl text-center'>&</span>
 			</Scale>
 
 			<div className='w-full flex flex-col justify-center items-center'>
@@ -89,15 +89,15 @@ const Couple = () => {
         </Slide>
 
         <Slide direction='left' delay={0.1}>
-          <p className='text-4xl font-great-vibes mb-2'>Prayoga Febriandika</p>
+          <p className='text-4xl font-great-vibes mb-2 text-center'>Prayoga Febriandika</p>
         </Slide>
 
         <Slide direction='left' delay={0.15}>
-          <p className='text-sm'>Putra kedua dari</p>
+          <p className='text-sm text-center'>Putra kedua dari</p>
         </Slide>
 
         <Slide direction='left' delay={0.2}>
-          <p className='text-sm'>Bapak Ketut Hari Handoko & Ibu Eni Rokhayati</p>
+          <p className='text-sm text-center'>Bapak Ketut Hari Handoko & Ibu Eni Rokhayati</p>
         </Slide>
 
         <Slide direction='left' delay={0.25}>
