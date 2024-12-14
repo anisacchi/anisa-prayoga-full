@@ -55,10 +55,10 @@
     "url": "kasubagwil1",
     "name": "Bpk. Abdul Rosyid, S.T."
   },
-	{
-		"url": "kasubagwil2",
-		"name": "Bpk. Redi Fonaldi, S.E."
-	},
+  {
+    "url": "kasubagwil2",
+    "name": "Bpk. Redi Fonaldi, S.E."
+  },
   {
     "url": "kasubagwil3",
     "name": "Ibu Sri Wardani, S.H."
@@ -79,40 +79,44 @@
     "url": "bangfred",
     "name": "Bang Fredy"
   },
-	{
-		"url": "buallete",
-		"name": "Ibu Allete"
-	},
-	{
-		"url": "etha",
-		"name": "Etha & Suami"
-	},
-	{
-		"url": "dipus",
-		"name": "Diah & Suami"
-	},
-	{
-		"url": "inces",
-		"name": "Inas Istiqlaliyyah"
-	},
-	{
-		"url": "mita",
-		"name": "Swasti Paramita"
-	},
-	{
-		"url": "lidiya",
-		"name": "Maulidiya Qurrota Ayun"
-	},
-	{
-		"url": "vina",
-		"name": "Vina"
-	},
-	{
-		"url": "anggi",
-		"name": "Anggi"
-	},
-	{
-		"url": "amir",
-		"name": "Amirulloh"
-	}
+  {
+    "url": "buallete",
+    "name": "Ibu Allete"
+  },
+  {
+    "url": "muh",
+    "name": "Muh & Istri"
+  },
+  {
+    "url": "etha",
+    "name": "Etha & Suami"
+  },
+  {
+    "url": "dipus",
+    "name": "Diah & Suami"
+  },
+  {
+    "url": "inces",
+    "name": "Inas Istiqlaliyyah"
+  },
+  {
+    "url": "mita",
+    "name": "Swasti Paramita"
+  },
+  {
+    "url": "lidiya",
+    "name": "Maulidiya Qurrota Ayun"
+  },
+  {
+    "url": "vina",
+    "name": "Vina"
+  },
+  {
+    "url": "anggi",
+    "name": "Anggi"
+  },
+  {
+    "url": "amir",
+    "name": "Amirulloh"
+  }
 ]
